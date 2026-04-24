@@ -16,6 +16,7 @@ public class Records {
     private long amount;
     private String description;
     private String memo;
-    private String record_data;
+    private String recordData;
     private String createdAt;
+
 }
