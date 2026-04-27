@@ -11,7 +11,7 @@ public class Users {
     private String userPassword;
     private String name;
     private Integer age;
-    private Integer current_pig_level;
+    private Integer currentPigLevel;
     private Integer currentHouseLevel;
     private Long MonthlyIncome;
     private Integer targetExpenseRatio; //목표 지출 비용
@@ -37,8 +37,8 @@ public class Users {
         return age;
     }
 
-    public Integer getCurrent_pig_level() {
-        return current_pig_level;
+    public Integer getCurrentPigLevel() {
+        return currentPigLevel;
     }
 
     public Integer getCurrentHouseLevel() {
@@ -77,8 +77,8 @@ public class Users {
         this.age = age;
     }
 
-    public void setCurrent_pig_level(Integer current_pig_level) {
-        this.current_pig_level = current_pig_level;
+    public void setCurrentPigLevel(Integer currentPigLevel) {
+        this.currentPigLevel = currentPigLevel;
     }
 
     public void setCurrentHouseLevel(Integer currentHouseLevel) {

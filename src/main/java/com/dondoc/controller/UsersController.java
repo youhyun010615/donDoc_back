@@ -3,10 +3,7 @@ package com.dondoc.controller;
 import com.dondoc.model.Users;
 import com.dondoc.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,11 +24,25 @@ public class UsersController {
         return usersService.getUserById(id);
     }
 
-    @GetMapping("/{userId}")
+    @GetMapping("/by/{userId}")
     public Users getUserByUserId(@PathVariable String userId){
         return usersService.getUserByUserId(userId);
     }
 
+    @PostMapping
+    public Users createUser(@RequestBody Users users){ //RequestBody는 Json 바디를 객체로 변환하는 어노테이션
+        return usersService.createUser(users);
+    }
+
+    @PutMapping("/{id}")
+    public Users updateUser(@PathVariable Long id, Users users){
+        return usersService.updateUser(id, users);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteUsers(@PathVariable Long id){
+        usersService.deleteUser(id);
+    }
 
 
 

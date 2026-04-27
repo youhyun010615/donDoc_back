@@ -1,9 +1,12 @@
 package com.dondoc.service;
 
 import com.dondoc.model.MonthlyHistory;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
+@Service
 public class MonthlyHistoryServiceImpl implements MonthlyHistoryService{
     private static Long monthlyHistoryIdCounter = 4L;
 

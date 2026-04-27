@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DondocApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DondocApplication.class, args);
+		SpringApplication.run(DondocApplication.class, args);  // 1. Spring Container 생성 시작
 	}
 
 }

@@ -2,8 +2,11 @@ package com.dondoc.service;
 
 
 import com.dondoc.model.Records;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
+@Service
 public class RecordsServiceImpl implements RecordsService {
     private static Long recordsIdCounter = 4L;
 
@@ -17,7 +20,7 @@ public class RecordsServiceImpl implements RecordsService {
     }
 
     @Override
-    public List<Records> getRecordsByUserId(Long UserId) {
+    public List<Records> getRecordsByUserId(Long userId) {
         return List.of(
                 new Records(1L, 1L, 4L, 15000L, "점심", "음식점", "2026-04-21", "2026-04-21T12:00:00Z"),
                 new Records(2L, 1L, 5L, 5000L, "지하철", "교통카드", "2026-04-21", "2026-04-21T09:00:00Z"),

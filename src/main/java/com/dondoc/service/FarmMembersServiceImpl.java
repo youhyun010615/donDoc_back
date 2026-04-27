@@ -1,9 +1,11 @@
 package com.dondoc.service;
 
 import com.dondoc.model.FarmMembers;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class FarmMembersServiceImpl implements FarmMembersService{
     private static Long farmMemberIdCounter = 4L;
 

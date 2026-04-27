@@ -1,9 +1,12 @@
 package com.dondoc.service;
 
 import com.dondoc.model.Categories;
+import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 
+@Service
 public class CategoriesServiceImpl implements CategoriesService{
     private static Long categoriesIdCounter = 9L;
 
